@@ -74,7 +74,8 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
 	private TestItem[] items = new TestItem[] { 
 			new TestItem("Test Wifi", "yutaot://testwifi"),
 			new TestItem("Test Event", "yutaot://testevent"),
-            new TestItem("Test Event Pass Through", "yutaot://testeventpassthrough")
+            new TestItem("Test Event Pass Through", "yutaot://testeventpassthrough"),
+            new TestItem("Test Event Vertical Horizontal", "yutaot://eventtestverticalhorizontal"),
 			};
 
 	class TestItem {
