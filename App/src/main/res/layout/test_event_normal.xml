@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.yutao.testandroid.testevent.EventLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#032d3d"
+    android:tag="Root"
+    android:orientation="vertical" >
+
+    <me.yutao.testandroid.testevent.EventLinearLayoutFront
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/black"
+        android:tag="ViewGroupChild"
+        android:orientation="vertical" >
+
+        <me.yutao.testandroid.testevent.EventTextView
+            android:tag="EventTextViewFront"
+            android:id="@+id/tvEvent"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="Activity - ViewGroup - View Event dispatch Test"
+            android:textColor="@android:color/black" />
+    </me.yutao.testandroid.testevent.EventLinearLayoutFront>
+
+</me.yutao.testandroid.testevent.EventLinearLayout>

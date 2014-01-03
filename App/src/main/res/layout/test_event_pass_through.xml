@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.yutao.testandroid.testevent.passthrough.EventRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#032d3d"
+    android:tag="EventRelativeLayout"
+    android:orientation="vertical" >
+    
+    
+
+    <me.yutao.testandroid.testevent.passthrough.EventLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="EventLinearLayoutBack"
+        android:orientation="vertical" >
+
+        <me.yutao.testandroid.testevent.passthrough.EventButton
+            android:id="@+id/tvEvent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:tag="EventTextViewBack"
+            android:text="pass through Test, back"
+            />
+    </me.yutao.testandroid.testevent.passthrough.EventLinearLayout>
+    
+    <me.yutao.testandroid.testevent.passthrough.EventLinearLayoutFront
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:tag="EventLinearLayoutFront"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <me.yutao.testandroid.testevent.passthrough.EventButtonFront
+            android:id="@+id/tvFront"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="EventTextViewFront"
+            android:text="pass through Test, front"
+             />
+    </me.yutao.testandroid.testevent.passthrough.EventLinearLayoutFront>
+    
+    
+
+</me.yutao.testandroid.testevent.passthrough.EventRelativeLayout>
