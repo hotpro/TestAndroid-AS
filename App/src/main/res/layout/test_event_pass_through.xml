@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#032d3d"
-    android:tag="EventRelativeLayout"
+    android:tag="Root"
     android:orientation="vertical" >
     
     
@@ -16,6 +16,7 @@
 
         <me.yutao.testandroid.testevent.passthrough.EventButton
             android:id="@+id/tvEvent"
+            android:paddingBottom="40dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 			android:tag="EventTextViewBack"
@@ -23,10 +24,10 @@
             />
     </me.yutao.testandroid.testevent.passthrough.EventLinearLayout>
     
-    <me.yutao.testandroid.testevent.passthrough.EventLinearLayoutFront
+    <me.yutao.testandroid.testevent.passthrough.EventLinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:tag="EventLinearLayoutFront"
+        android:tag="EventLinearLayoutFront,false,true,false"
         android:layout_centerInParent="true"
         android:orientation="vertical" >
 
@@ -37,7 +38,7 @@
             android:tag="EventTextViewFront"
             android:text="pass through Test, front"
              />
-    </me.yutao.testandroid.testevent.passthrough.EventLinearLayoutFront>
+    </me.yutao.testandroid.testevent.passthrough.EventLinearLayout>
     
     
 
