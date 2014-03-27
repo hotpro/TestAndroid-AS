@@ -27,10 +27,10 @@ public class TestWifiActivity extends BaseActivity implements OnClickListener {
 	public void onClick(View view) {
 		if (wifiManager.isWifiEnabled()) {
 			wifiManager.setWifiEnabled(false);
-			btnSwitchWifi.setText("??????");
+			btnSwitchWifi.setText("wifi enabled");
 		} else {
 			wifiManager.setWifiEnabled(true);
-			btnSwitchWifi.setText("??????");
+			btnSwitchWifi.setText("wifi disabled");
 		}
 	}
 

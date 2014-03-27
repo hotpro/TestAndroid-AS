@@ -37,7 +37,7 @@ public class EventTextView extends TextView {
 	public boolean onTouchEvent(MotionEvent event) {
 		System.out.println(tag+ " onTouchEvent.action=" + Tool.getTouchAction(event.getAction()) + " begin");
 		boolean r = super.onTouchEvent(event);
-//		r = true;
+		r = true;
 		System.out.println(tag+ " onTouchEvent.action=" + Tool.getTouchAction(event.getAction())+ " r: " + r + " end");
 		return r;
 	}

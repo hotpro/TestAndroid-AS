@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="centerMenuBackGroundColor">#80b9bfc5</color>
+    <color name="levelListBackgroundColor">#f6f7f8</color>
+    <drawable name="tileTitleBackgroundColor">#bf121c23</drawable>
+    <drawable name="dimViewBackgroundColor">#bf333333</drawable>
+    <color name="whiteColor">#ffffff</color>
+    <drawable name="darkBlueColor">#222299</drawable>
+    <color name="blackColor">#000</color>
+    <color name="settingsSelectedColor">#0099cc</color>
+    <drawable name="tileImageDefaultBackground">#b3616a77</drawable>
+    <color name="passedGreen">#000</color>
+    <color name="alertBackgroundColor">#F8616A77</color>
+    <color name="levelNavigationBackgourndColor">#f6f6f6</color>
+    <color name="levelPassedBackgourndColor">#E8f6f6f6</color>
+    <color name="unitPassedAreaBackgourndColor">#f0f0f0</color>
+    <color name="activityNavigationBackgourndColor">#2e353e</color>
+    <color name="closeLevelActiveColor">#C4C5C6</color>
+    <color name="closeStepActiveColor">#5d646f</color>
+    <color name="settingsButtonActiveColor">#2E3F49</color>
+    <color name="settingsButtonInactiveColor">#1E2F39</color>
+    <color name="buttonActiveColor">#ffffff</color>
+    <color name="buttonInactiveColor">#a2a2a2</color>
+    <color name="loadingTextColor">#878f9a</color>
+    <color name="changeLevelTextColor">#B6BBC0</color>
+    <color name="hideLevelTextColor">#008DDE</color>
+    <color name="stepStripTextColor">#7f8386</color>
+    <color name="stepStripContinueTextColor">#DA1273</color>
+    <color name="stepStripBackgroundColor">#569800</color>
+    <color name="changeLevelLoadCoverColor">#CCffffff</color>
+    <color name="glpltilebackgroundColor">#353E44</color>
+    <color name="darkText">#555</color>
+    <drawable name="centerMenuItemPressedBg">#33b5e5</drawable>
+    <drawable name="centerMenuItemNormalBg">#f3f3f3</drawable>
+    <drawable name="dashboardItemNormalBg">#b3616a77</drawable>
+    <drawable name="transparentColor">#00000000</drawable>
+    <drawable name="appBackground">#ffffff</drawable>
+    <drawable name="activityInstructionDialogOutsideBlurColor">#88000000</drawable>
+
+
+    <color name="sp_brownText">#4a4a4a</color>
+    <color name="sp_blueText">#00c3ed</color>
+    <color name="sp_greenText">#8aca01</color>
+
+    <color name="sp_brownTextDefault">#e5183636</color>
+    <color name="sp_brownTextHover">#ff183636</color>
+    <color name="sp_brownTextDisable">#33183636</color>
+
+    <color name="sp_greenTextDefault">#ff87c600</color>
+    <color name="sp_greenTextHover">#ff98d020</color>
+    <color name="sp_greenTextDisable">#3387c600</color>
+
+    <color name="sp_redTextDefault">#ffec008c</color>
+    <color name="sp_redTextHover">#ffee1f9a</color>
+    <color name="sp_redTextDisable">#33ec008c</color>
+</resources>

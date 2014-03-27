@@ -7,6 +7,7 @@ import android.view.MotionEvent;
 import android.widget.LinearLayout;
 
 import me.yutao.testandroid.testevent.Tool;
+import me.yutao.testandroid.testevent.Utils;
 
 public class EventLinearLayout extends LinearLayout {
 	private String tag = EventLinearLayout.class.getSimpleName();
@@ -17,16 +18,14 @@ public class EventLinearLayout extends LinearLayout {
 
 	public EventLinearLayout(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		Object t = getTag();
-		if (t instanceof String) {
-			tag = (String) t;
-		}
+        tag = Utils.getTag(getTag());
 	}
 	
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
     	System.out.println(tag+ " dispatchTouchEvent.action=" + Tool.getTouchAction(ev.getAction()) + " begin");
     	boolean r = super.dispatchTouchEvent(ev);
+        r = Utils.isDispatchTouchEvent(getTag(), r);
     	System.out.println(tag+ " dispatchTouchEvent.action=" + Tool.getTouchAction(ev.getAction())+ " r: " + r + " end");
         return r;
     }
@@ -35,6 +34,7 @@ public class EventLinearLayout extends LinearLayout {
 	public boolean onInterceptTouchEvent(MotionEvent ev) {
 		System.out.println(tag+ " onInterceptTouchEvent.action=" + Tool.getTouchAction(ev.getAction()) + " begin");
 		boolean r = super.onInterceptHoverEvent(ev);
+        r = Utils.isInterceptTouchEvent(getTag(), r);
 		System.out.println(tag+ " onInterceptTouchEvent.action=" + Tool.getTouchAction(ev.getAction())+ " r: " + r + " end");
 		return r;
 	}
@@ -42,6 +42,7 @@ public class EventLinearLayout extends LinearLayout {
 	public boolean onTouchEvent(MotionEvent event) {
 		System.out.println(tag+ " onTouchEvent.action=" + Tool.getTouchAction(event.getAction()) + " begin");
 		boolean r = super.onTouchEvent(event);
+        r = Utils.isTouchEvent(getTag(), r);
 		System.out.println(tag+ " onTouchEvent.action=" + Tool.getTouchAction(event.getAction())+ " r: " + r + " end");
 		return r;
 //		return true;
