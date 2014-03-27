@@ -76,6 +76,8 @@ public class MainActivity extends BaseActivity implements OnItemClickListener {
 			new TestItem("Test Event", "yutaot://testevent"),
             new TestItem("Test Event Pass Through", "yutaot://testeventpassthrough"),
             new TestItem("Test Event Vertical Horizontal", "yutaot://eventtestverticalhorizontal"),
+            new TestItem("Test TouchDelegate", "yutaot://testtouchdelegateactivity"),
+
 			};
 
 	class TestItem {

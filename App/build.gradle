@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.6.+'
+        classpath 'com.android.tools.build:gradle:0.9.+'
     }
 }
 apply plugin: 'android'
@@ -14,9 +14,7 @@ repositories {
 
 
 dependencies {
-    compile files (
-    "libs/android-support-v4.jar",
-    )
+    compile 'com.android.support:appcompat-v7:+'
 }
 
 android {
@@ -33,11 +31,7 @@ android {
             proguardFile getDefaultProguardFile('proguard-android.txt')
         }
     }
-    productFlavors {
-        defaultFlavor {
-            proguardFile 'proguard-rules.txt'
-        }
-    }
+
 }
 
 
